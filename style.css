@@ -28,7 +28,8 @@ a:focus {
 .brand {
     font-family: 'Turnip';
     color: #004AAD;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 .navbar {
@@ -73,7 +74,7 @@ img {
 }
 
 #sidebar {
-    width: 250px;
+    width: 280px;
     position: fixed;
     top: 0;
     left: 0;
@@ -86,7 +87,7 @@ img {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -280px;
 }
 
 #sidebar .sidebar-header {
@@ -168,7 +169,7 @@ ul.CTAs a {
 ----------------------------------------------------- */
 
 #content {
-    width: calc(100% - 250px);
+    width: calc(100% - 280px);
     padding: 40px;
     min-height: 100vh;
     transition: all 0.3s;
