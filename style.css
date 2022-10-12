@@ -84,7 +84,7 @@ code {
   margin: 40px 0;
 }
 
-img {
+.logo {
   display: column;
   width: 2rem;
   height: 2rem;
@@ -394,6 +394,12 @@ ul.CTAs a {
   background-color: #ec6f6f;
   color: #f6f6f4;
   transition: 300ms ease-in;
+}
+
+/* Charts */
+.charts {
+  max-width: 100%;
+  justify-content: left;
 }
 
 /* ---------------------------------------------------

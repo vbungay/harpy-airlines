@@ -42,7 +42,7 @@
                 alt="Logo"
                 width="30"
                 height="24"
-                class="d-inline-block align-text-top"
+                class="logo d-inline-block align-text-top"
               />
               Harpy Airlines
             </a>
@@ -74,6 +74,14 @@
                   class="tablinks"
                   onclick="openCity(event, 'typography')"
                   >Typography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event, 'data-visualization')"
+                  >Data Visualization</a
                 >
               </li>
               <li><a href="#">Grid System</a></li>
@@ -237,6 +245,100 @@
           </p>
         </div>
 
+        <!-- Data Visualization -->
+        <div id="data-visualization" class="tabcontent">
+          <h1 class="w-100 py-3">Data Visualization</h1>
+          <br />
+          <h2 class="p-1 h2">Charts</h2>
+          <p class="p-1">
+            Using the brand color as the main color for the chart
+          </p>
+          <hr />
+          <h3 class="h3 py-3">Area Graph (Normal & Stacked)</h3>
+          <img
+            src="./images/charts/Area Graph (Normal).png"
+            title="Area Graph"
+            alt="Area Graph Normal"
+            class="charts"
+          />
+          <img
+            src="./images/charts/Area Graph (Stacked).png"
+            title="Area Graph (Stacked)"
+            alt="Area
+                Graph Stacked"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Bar Graph (Horizontal, Normal & Stacked)</h3>
+          <img
+            src="./images/charts/Bar Graph (Horizontal).png"
+            title="Bar Graph (Horizontal)"
+            alt="Bar Graph Horizontal"
+            class="charts"
+          />
+          <img
+            src="./images/charts/Bar Graph (Normal).png"
+            title="Bar Graph"
+            alt="Bar
+                Graph Normal"
+            class="charts"
+          />
+          <img
+            src="./images/charts/Bar Graph (Stacked).png"
+            title="Bar Graph (Stacked)"
+            alt="Bar
+              Graph Stacked"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Donut Chart</h3>
+          <img
+            src="./images/charts/Donut Chart.png"
+            title="Donut Chart"
+            alt="Donut Chart"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Line Graph</h3>
+          <img
+            src="./images/charts/Line Graph (Normal).png"
+            title="Line Graph"
+            alt="Line Graph"
+            class="charts"
+          />
+          <img
+            src="./images/charts/Line Graph (Stacked).png"
+            title="Line Graph (Stacked)"
+            alt="Line Graph Stacked"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Pie Chart</h3>
+          <img
+            src="./images/charts/Pie Chart.png"
+            title="Pie Chart"
+            alt="Pie Chart"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Scatter Plot</h3>
+          <img
+            src="./images/charts/Scatter Plot.png"
+            title="Scatter Plot"
+            alt="Scatter Plot"
+            class="charts"
+          />
+          <hr />
+          <h3 class="h3 py-3">Single Value Chart</h3>
+          <img
+            src="./images/charts/Single Value.png"
+            title="Single Value Chart"
+            alt="Single Value Chart"
+            class="charts"
+          />
+          <hr />
+        </div>
+
         <!-- Page 1 -->
         <!-- <div id="compBanner" class="tabcontent">
           <h1 class="w-100 p-3">Page 1</h1>
@@ -246,36 +348,34 @@
         <!-- Buttons -->
         <div id="compButtons" class="tabcontent">
           <h1 class="w-100 p-3">Buttons</h1>
-          <div class="container p-3">
-          <h2 class="p-3">Default</h2>
+          <h2 class="p-3 h2">Default</h2>
           <p class="p-3">
             The button classes can be applied to
             <code>&lt;button&gt;</code> element only.
           </p>
-          <div class="container p-3">
+          <div class="p-3">
             <button class="button-primary">Search Flights</button>
             <button class="button-warning">Delete</button>
           </div>
-            <pre class="p-3 m-3">
+          <pre class="p-3 m-3">
 &lt;button class="button button-primary"&gt;Default&lt;/button&gt;
 &lt;button class="button button-warning"&gt;Caution&lt;/button&gt;
-            </pre>
+            </pre
+          >
+          <h2 class="p-3 h2">Disabled</h2>
+          <p class="p-3">
+            We recommend using the semantic <code>disabled</code> attribute for
+            appropriate HTML elements.
+          </p>
+          <div class="p-3">
+            <button class="button-primary" disabled>Search Flights</button>
+            <button class="button-warning" disabled>Delete</button>
           </div>
-        </div>
-          <div class="container p-3">
-            <h2 class="p-3">Disabled</h2>
-            <p class="p-3">
-              We recommend using the semantic <code>disabled</code> attribute for appropriate HTML elements.
-            </p>
-            <div class="container p-3">
-              <button class="button-primary" disabled>Search Flights</button>
-              <button class="button-warning" disabled>Delete</button>
-            </div>
-            <pre class="p-3 m-3">
+          <pre class="p-3 m-3">
 &lt;button class="button-primary" disabled&gt;Default&lt;/button&gt;
 &lt;button class="button-warning" disabled&gt;Caution&lt;/button&gt;
-            </pre>
-          </div>
+            </pre
+          >
         </div>
       </div>
     </div>
