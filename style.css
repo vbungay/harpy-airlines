@@ -38,11 +38,13 @@ button[disabled] {
 
 /* Multi-line Code */
 pre {
-  width: 50%;
+  width: 80%;
   display: block;
   background-color: #fff;
   color: #060a0e;
   border: 1px solid #f6f6f4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 pre > code {
@@ -152,7 +154,7 @@ a[aria-expanded="true"] {
 
 #homeSubmenu,
 #pageSubmenu {
-  color: #fdffff;
+  color: #004aad;
 }
 
 #homeSubmenu a.active {
@@ -374,8 +376,7 @@ ul.CTAs a {
   border-radius: 5px;
 }
 
-.button-primary:hover,
-.button-primary:focus {
+.button-primary:hover {
   background-color: #2e71cb;
   color: #f6f6f4;
   transition: 300ms ease-in;
@@ -389,8 +390,7 @@ ul.CTAs a {
   border-radius: 5px;
 }
 
-.button-warning:hover,
-.button-warning:focus {
+.button-warning:hover {
   background-color: #ec6f6f;
   color: #f6f6f4;
   transition: 300ms ease-in;
@@ -418,5 +418,9 @@ ul.CTAs a {
   }
   #content.active {
     width: calc(100% - 350px);
+  }
+
+  pre {
+    width: 100%;
   }
 }

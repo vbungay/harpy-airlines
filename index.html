@@ -104,7 +104,46 @@
                   >Buttons</a
                 >
               </li>
-              <li><a href="#">Page 3</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event, 'compCards')"
+                  >Cards</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event,'compDialog')"
+                  >Dialog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event,'compFeedback')"
+                  >Feedback</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event,'compForm')"
+                  >Forms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="tablinks"
+                  onclick="openCity(event,'compIcons')"
+                  >Icons</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
@@ -249,8 +288,8 @@
         <div id="data-visualization" class="tabcontent">
           <h1 class="w-100 py-3">Data Visualization</h1>
           <br />
-          <h2 class="p-1 h2">Charts</h2>
-          <p class="p-1">
+          <h2 class="py-2 h2">Charts</h2>
+          <p class="py-1">
             Using the brand color as the main color for the chart
           </p>
           <hr />
@@ -339,43 +378,129 @@
           <hr />
         </div>
 
-        <!-- Page 1 -->
-        <!-- <div id="compBanner" class="tabcontent">
-          <h1 class="w-100 p-3">Page 1</h1>
-          <br />
-        </div> -->
-
+        <!-- COMPONENTS -->
         <!-- Buttons -->
         <div id="compButtons" class="tabcontent">
-          <h1 class="w-100 p-3">Buttons</h1>
-          <h2 class="p-3 h2">Default</h2>
-          <p class="p-3">
+          <h1 class="w-100 py-3">Buttons</h1>
+          <h2 class="py-3 h2">Default</h2>
+          <p class="py-2">
             The button classes can be applied to
             <code>&lt;button&gt;</code> element only.
           </p>
-          <div class="p-3">
+          <div class="py-3">
             <button class="button-primary">Search Flights</button>
             <button class="button-warning">Delete</button>
           </div>
-          <pre class="p-3 m-3">
+          <pre class="py-3 my-3">
 &lt;button class="button button-primary"&gt;Default&lt;/button&gt;
 &lt;button class="button button-warning"&gt;Caution&lt;/button&gt;
             </pre
           >
-          <h2 class="p-3 h2">Disabled</h2>
-          <p class="p-3">
+          <h2 class="py-3 h2">Disabled</h2>
+          <p class="py-2">
             We recommend using the semantic <code>disabled</code> attribute for
             appropriate HTML elements.
           </p>
-          <div class="p-3">
+          <div class="py-3">
             <button class="button-primary" disabled>Search Flights</button>
             <button class="button-warning" disabled>Delete</button>
           </div>
-          <pre class="p-3 m-3">
+          <pre class="py-3 my-3">
 &lt;button class="button-primary" disabled&gt;Default&lt;/button&gt;
 &lt;button class="button-warning" disabled&gt;Caution&lt;/button&gt;
             </pre
           >
+        </div>
+
+        <!-- Cards -->
+        <div id="compCards" class="tabcontent">
+          <h1 class="w-100 py-3">Cards</h1>
+        </div>
+
+        <!-- Dialog -->
+        <div id="compDialog" class="tabcontent">
+          <h1 class="w-100 py-3">Dialog</h1>
+          <p class="py-2">
+            We use modals for general purposes throughout the app.
+          </p>
+          <h2 class="h3 py-3">Example</h2>
+          <button
+            type="button"
+            class="button-primary my-3"
+            data-toggle="modal"
+            data-target="#exampleDialog"
+          >
+            Show Modal
+          </button>
+          <pre class="py-3 my-3">
+&lt;div class="modal-dialog" role="document"&gt;
+  &lt;div class="modal-content"&gt;
+    &lt;div class="modal-header"&gt;
+      &lt;h5 class="modal-title" id="exampleDialogLabel"&gt;Are you sure?&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="modal-body"&gt;You are about to delete this booking.&lt;/div&gt;
+    &lt;div class="modal-footer"&gt;
+      &lt;button type="button" class="button-warning" data-dismiss="modal"&gt;
+        Cancel
+      &lt;/button&gt;
+      &lt;button type="button" class="button-primary"&gt;Delete&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+        </div>
+
+        <!-- Icons -->
+        <div id="compIcons" class="tabcontent">
+          <h1 class="w-100 py-3">Icons</h1>
+        </div>
+
+        <!-- Form Elements -->
+        <div id="compForm" class="tabcontent">
+          <h1 class="w-100 py-3">Forms</h1>
+        </div>
+
+        <!-- Feedback Elements -->
+        <div id="compFeedback" class="tabcontent">
+          <h1 class="w-100 py-3">Feedback</h1>
+        </div>
+
+        <!-- End of Content -->
+      </div>
+    </div>
+
+    <!-- Component Modal -->
+    <div
+      class="modal fade"
+      id="exampleDialog"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleDialogLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleDialogLabel">Are you sure?</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">You're about to delete this booking.</div>
+          <div class="modal-footer">
+            <button type="button" class="button-warning" data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="button-primary">Delete</button>
+          </div>
         </div>
       </div>
     </div>
@@ -399,7 +524,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5\patterns\dialogs/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
