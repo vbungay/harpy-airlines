@@ -221,22 +221,18 @@ ul.CTAs a {
 }
 
 .h2 {
-  font-family: "Turnip Light";
   font-size: 1.4rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .h3 {
-  font-family: "Turnip Light";
   font-size: 1.2rem;
 }
 
 .h4 {
-  font-family: "Turnip Light";
   font-size: 1rem;
 }
-
 .card {
   background: #004aad;
   padding: 2.5rem;
