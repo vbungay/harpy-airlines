@@ -70,24 +70,10 @@ a:focus {
 pre {
   width: 80%;
   display: block;
-  background-color: #eee;
-  color: #060a0e;
-  border: 1px solid #f6f6f4;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-
-pre > code {
-  color: #060a0e;
-}
-
-code {
-  padding: 0.1rem;
-  color: #060a0e;
-  width: 90%;
-  border-bottom: 1px dashed #ddd;
-  margin-top: 1.5rem;
-}
+*/
 
 /* ---------------------------------------------------
     SIDEBAR STYLE

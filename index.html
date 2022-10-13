@@ -28,6 +28,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet"
     />
+    <!-- Highlight JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
   </head>
 
   <body>
@@ -447,10 +452,10 @@
             <span>Book Now </span>
           </button>
           <br />
-          <pre class="p-2 my-3">
-&lt;button class="button"&gt;
-  &lt;span>Book Now&lt;/span&gt;
-&lt;/button&gt;
+          <pre>
+            <code>
+&lt;button class=&quot;button&quot;&gt;&lt;span&gt;Book Now&lt;/span&gt;&lt;/button&gt;
+            </code>
           </pre>
           <div class="line"></div>
           <h2 class="h2">Animated Buttons with Arrow</h2>
@@ -465,15 +470,12 @@
             <span>Right </span>
           </button>
           <br />
-          <pre class="p-2 my-3">
-&lt;button class="button leftButton"&gt;
-  &lt;span>Left&lt;/span&gt;
-&lt;/button&gt;
-&lt;button class="button rightButton"&gt;
-  &lt;span>Right&lt;/span&gt;
-&lt;/button&gt;
-                      </pre
-          >
+          <pre>
+            <code>
+&lt;button class=&quot;button leftButton&quot;&gt;&lt;span&gt;Left&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;button rightButton&quot;&gt;&lt;span&gt;Right&lt;/span&gt;&lt;/button&gt;
+            </code>
+          </pre>
           <div class="line"></div>
           <h2 class="h2">Disabled and Loading Buttons</h2>
           <p class="col-sm-6 col-lg-8">
@@ -486,6 +488,13 @@
           <button disabled class="loadingButton">
             <span>Loading</span>
           </button>
+          <br />
+          <pre>
+            <code>
+&lt;button disabled class=&quot;disabledButton&quot;&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/button&gt;
+&lt;button disabled class=&quot;loadingButton&quot;&gt;&lt;span&gt;Loading&lt;/span&gt;&lt;/button&gt;
+            </code>
+          </pre>
         </div>
 
         <!-- Cards -->
@@ -508,24 +517,26 @@
           >
             Show Modal
           </button>
-          <pre class="p-2 my-3">
-&lt;div class="modal-dialog" role="document"&gt;
-  &lt;div class="modal-content"&gt;
-    &lt;div class="modal-header"&gt;
-      &lt;h5 class="modal-title" id="exampleDialogLabel"&gt;Are you sure?&lt;/h5&gt;
-        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
-          &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
-        &lt;/button&gt;
+          <pre>
+            <code>
+&lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+    &lt;div class=&quot;modal-header&quot;&gt;
+      &lt;h5 class=&quot;modal-title&quot; id=&quot;exampleDialogLabel&quot;&gt;Are you sure?&lt;/h5&gt;
+      &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;/button&gt;
     &lt;/div&gt;
-    &lt;div class="modal-body"&gt;You are about to delete this booking.&lt;/div&gt;
-    &lt;div class="modal-footer"&gt;
-      &lt;button type="button" class="modalButton-warning" data-dismiss="modal"&gt;
+    &lt;div class=&quot;modal-body&quot;&gt;You're about to delete this booking.&lt;/div&gt;
+    &lt;div class=&quot;modal-footer&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modalButton-warning&quot; data-dismiss=&quot;modal&quot;&gt;
         Cancel
       &lt;/button&gt;
-      &lt;button type="button" class="modalButton"&gt;Okay&lt;/button&gt;
+      &lt;button type=&quot;button&quot; class=&quot;modalButton&quot;&gt;Okay&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+            </code>
           </pre>
         </div>
 
@@ -634,6 +645,12 @@
       }
 
       document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- Highlight JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
     </script>
   </body>
 </html>
