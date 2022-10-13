@@ -54,6 +54,12 @@ a:focus {
     margin: 40px 0;
 }
 
+.line2 {
+    width: 90%;
+    border-bottom: 1px dashed #ddd;
+    margin-top: 1.5rem;
+}
+
 img {
     display: column;
     width: 2rem;
@@ -124,7 +130,7 @@ a[aria-expanded="true"] {
     color:#FDFFFF;
 }
 
-#homeSubmenu a.active {
+#homeSubmenu, #pageSubmenu a.active {
     color: #2E71CB;
 }
 
@@ -334,6 +340,28 @@ ul.CTAs a {
     background: transparent !important;
     color: #060a0e !important;
     border: none;
+}
+
+.heading-header {
+    font-size: 48px !important;
+}
+
+.heading-header2{
+    font-size: 36px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.heading-header3{
+    font-size: 28px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.heading-header4{
+    font-size: 20px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 /* Button design */
