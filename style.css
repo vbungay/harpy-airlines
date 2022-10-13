@@ -85,6 +85,15 @@ code {
   padding: 0.1rem;
   /* background-color: #c1c2c3; */
   color: #060a0e;
+  width: 90%;
+  border-bottom: 1px dashed #ddd;
+  margin-top: 1.5rem;
+}
+
+img {
+  display: column;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* ---------------------------------------------------
@@ -152,7 +161,8 @@ a[aria-expanded="true"] {
   color: #004aad;
 }
 
-#homeSubmenu a.active {
+#homeSubmenu,
+#pageSubmenu a.active {
   color: #2e71cb;
 }
 
@@ -373,6 +383,28 @@ ul.CTAs a {
 }
 
 /* Typography */
+.heading-header {
+  font-size: 48px !important;
+}
+
+.heading-header2 {
+  font-size: 36px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.heading-header3 {
+  font-size: 28px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.heading-header4 {
+  font-size: 20px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 .heading-header {
   font-size: 48px !important;
 }
