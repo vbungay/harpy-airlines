@@ -233,11 +233,22 @@ ul.CTAs a {
 .h4 {
   font-size: 1rem;
 }
+
+button {
+  display: none;
+}
+
+.btnCopy:hover button {
+  display: block;
+  cursor: pointer;
+}
+
 .card {
   background: #004aad;
   padding: 2.5rem;
   color: #fdffff;
   margin-left: 1rem;
+  font-size: 16px;
 }
 
 .card2 {
