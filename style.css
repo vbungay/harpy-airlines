@@ -83,17 +83,10 @@ pre > code {
 
 code {
   padding: 0.1rem;
-  /* background-color: #c1c2c3; */
   color: #060a0e;
   width: 90%;
   border-bottom: 1px dashed #ddd;
   margin-top: 1.5rem;
-}
-
-img {
-  display: column;
-  width: 2rem;
-  height: 2rem;
 }
 
 /* ---------------------------------------------------
