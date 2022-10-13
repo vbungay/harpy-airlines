@@ -54,6 +54,12 @@ a:focus {
   margin: 40px 0;
 }
 
+.line2 {
+  width: 90%;
+  border-bottom: 1px dashed #ddd;
+  margin-top: 1.5rem;
+}
+
 .logo {
   display: column;
   width: 2rem;
@@ -366,6 +372,29 @@ ul.CTAs a {
   justify-content: left;
 }
 
+/* Typography */
+.heading-header {
+  font-size: 48px !important;
+}
+
+.heading-header2 {
+  font-size: 36px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.heading-header3 {
+  font-size: 28px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.heading-header4 {
+  font-size: 20px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 /* Button design */
 .button {
   display: inline-block;
@@ -492,7 +521,7 @@ ul.CTAs a {
 }
 
 .modalButton-warning {
-  background-color: #ec6f6f;
+  background-color: #f87575;
   color: #f6f6f4;
   padding: 0.5rem 1rem;
   border: none;
