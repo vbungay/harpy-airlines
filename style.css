@@ -413,10 +413,10 @@ button {
   font-weight: 400;
 }
 
-.heading-header5{
-    font-size: 16px !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+.heading-header5 {
+  font-size: 16px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 /* Button design */
@@ -565,11 +565,98 @@ button {
   transition: 0.5s;
 }
 
+/* FORM ELEMENTS */
+.form-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: left;
+  width: 100vh;
+}
+
+/* Text Input */
+.textLabel {
+  width: 50%;
+}
+
+.textInput {
+  padding: 5px 10px;
+  width: 50%;
+  border: 1px solid #c1c2c3;
+  border-radius: 0.375rem;
+  text-transform: lowercase;
+}
+
+.textInput:focus {
+  background-color: white;
+  border-radius: 0.375rem;
+  outline: 2px solid #004aad;
+}
+
+/* Radio and Checkbox */
+.form-radio {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.form-radio:hover input ~ .radio-checked {
+  background-color: #44474a;
+  transition: 0.3s all ease;
+}
+
+.form-radio input:checked ~ .radio-checked {
+  background-color: #004aad;
+}
+
+.radio-checked:after {
+  content: "";
+  position: absolute;
+  display: none;
+  transition: 1s all ease;
+}
+
+.form-radio input:checked ~ .radio-checked:after {
+  display: block;
+}
+
+.form-radio .radio-checked:after {
+  top: 8px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   #sidebar {
     margin-left: -350px;
   }
@@ -585,5 +672,21 @@ button {
 
   pre {
     width: 100%;
+  }
+
+  .form-container {
+    min-width: 100vh;
+  }
+
+  .textLabel {
+    width: 100%;
+  }
+
+  .textInput {
+    padding: 5px 10px;
+    width: 40%;
+    border: 1px solid #c1c2c3;
+    border-radius: 0.375rem;
+    text-transform: lowercase;
   }
 }
