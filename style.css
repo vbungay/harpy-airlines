@@ -220,12 +220,6 @@ ul.CTAs a {
   color: #44474a;
 }
 
-.h2 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
 .h3 {
   font-size: 1.2rem;
 }
@@ -297,6 +291,34 @@ button {
   background: #2e71cb;
   padding: 2.5rem;
   color: #fff;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.feedback-success {
+  background: #ccf5ac;
+  color: #060a0e;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.feedback-info {
+  background: #89c2d9;
+  color: #060a0e;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.feedback-danger {
+  background: #ffe69e;
+  color: #060a0e;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.feedback-warning {
+  background: #f87575;
+  color: #060a0e;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
 }
@@ -417,6 +439,37 @@ button {
   font-size: 16px !important;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+.para {
+  color: #060a0e
+}
+
+.para2 {
+  font-size: 28px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #060a0e;
+}
+
+.subsec {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #060a0e;
+  margin-top: 1rem;
+}
+
+.bodybold {
+  font-weight: 500;
+  font-size: 16px;
+  color: #060a0e;
 }
 
 /* Button design */
