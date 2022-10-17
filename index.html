@@ -56,40 +56,30 @@
 
         <ul class="list-unstyled components">
           <li class="active">
-            <a
-              href="#homeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle heading"
-              >Guidelines</a
-            >
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle heading">
+              Guidelines
+            </a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
               <li>
-                <a
-                  href="#"
-                  class="tablinks"
-                  onclick="openCity(event, 'colors')"
-                  id="defaultOpen"
-                  >Color</a
-                >
+                <a href="#" class="tablinks" onclick="openCity(event, 'colors')" id="defaultOpen" >
+                  Color
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="tablinks"
-                  onclick="openCity(event, 'typography')"
-                  >Typography</a
-                >
+                <a href="#" class="tablinks" onclick="openCity(event, 'typography')">
+                  Typography
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="tablinks"
-                  onclick="openCity(event, 'data-visualization')"
-                  >Data Visualization</a
-                >
+                <a href="#" class="tablinks" onclick="openCity(event, 'data-visualization')">
+                  Data Visualization
+                </a>
               </li>
-              <li><a href="#">Grid System</a></li>
+              <li>
+                <a href="#" class="tablinks" onclick="openCity(event, 'grid-system')">
+                  Grid System
+                </a>
+              </li>
             </ul>
           </li>
           <li>
@@ -837,6 +827,13 @@
           <hr />
         </div>
 
+        <div id="grid-system" class="tabcontent">
+          <h1 class="w-100 p-3">Grid System</h1>
+          <br />
+          
+          
+        </div>
+
         <!-- Buttons -->
         <div id="buttons" class="tabcontent">
           <h1 class="w-100 py-3">Buttons</h1>
@@ -940,6 +937,94 @@
         <!-- Icons -->
         <div id="compIcons" class="tabcontent">
           <h1 class="w-100 py-3">Icons</h1>
+          <div class="container">
+            <div class="row" style="margin-top: 2rem;">
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                      <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">airplane</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                      <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">airplane-fill</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">arrow-down</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">arrow-left</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 2rem;">
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">arrow-right</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">arrow-up</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">plus-circle</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card icons-bg" style="max-width: 15rem; height: 12rem">
+                  <div class="card-body text-center">
+                    <svg style="margin-bottom: 1rem;" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                    </svg>
+                  </div>
+                  <div class="card-footer bg-transparent text-center icon-footer">plus-circle-fill</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Form Elements -->
@@ -1043,7 +1128,7 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <p class="card-title bodybold">Flight status</p>
-                      <p class="card-text para">Success</p>
+                      <p class="card-text para">Success!</p>
                     </div>
                   </div>
                   </div>
@@ -1083,7 +1168,7 @@
                     <div class="col-md-8">
                       <div class="card-body">
                         <p class="card-title bodybold">Flight status</p>
-                        <p class="card-text para">4 seats left</p>
+                        <p class="card-text para">4 seats left!</p>
                       </div>
                     </div>
                     </div>
@@ -1103,7 +1188,7 @@
                     <div class="col-md-8">
                       <div class="card-body">
                         <p class="card-title bodybold" style="color: white">Flight status</p>
-                        <p class="card-text para" style="color: white">Fares are ALL-IN and not guaranteed until final purchase.</p>
+                        <p class="card-text para" style="color: white">Sold out!</p>
                       </div>
                     </div>
                     </div>
@@ -1173,9 +1258,7 @@
                 </div>
               </div>
             </div>
-            
           </div>
-          
         </div>
         <!-- End of Content -->
       </div>

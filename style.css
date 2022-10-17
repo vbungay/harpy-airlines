@@ -509,6 +509,16 @@ button {
   margin: .6rem;
 }
 
+.icons-bg {
+  background: #fff;
+  padding-top: 1.2rem;
+  color: #44474a;
+}
+
+.icon-footer {
+  font-size: 12px;
+}
+
 /* Button design */
 .button {
   display: inline-block;
