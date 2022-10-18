@@ -72,8 +72,8 @@ pre {
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
+  margin-bottom: 0;
 }
-*/
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -228,7 +228,7 @@ ul.CTAs a {
   font-size: 1rem;
 }
 
-button {
+.btnCopy button {
   display: none;
 }
 
@@ -474,39 +474,38 @@ button {
   margin-left: 1rem;
 }
 
+.badge {
+  border-radius: 0.375rem;
+}
+
 .base {
   background: #c1c2c3;
-  border-radius: 2rem;
   font-size: 16px;
 }
 
 .success-bg {
   background: #ccf5ac;
-  border-radius: 2rem;
   font-size: 16px;
 }
 
 .info-bg {
   background: #89c2d9;
-  border-radius: 2rem;
   font-size: 16px;
 }
 
 .danger-bg {
   background: #ffe69e;
-  border-radius: 2rem;
   font-size: 16px;
 }
 
 .warning-bg {
   background: #f87575;
-  border-radius: 2rem;
   font-size: 16px;
   color: #fdffff;
 }
 
 .badges span {
-  margin: .6rem;
+  margin: 0.6rem;
 }
 
 .icons-bg {
@@ -674,30 +673,27 @@ button {
 }
 
 /* Text Input */
-.textLabel {
-  width: 50%;
-}
-
 .textInput {
   padding: 5px 10px;
-  width: 50%;
+  width: 250px;
   border: 1px solid #c1c2c3;
   border-radius: 0.375rem;
-  text-transform: lowercase;
 }
 
 .textInput:focus {
   background-color: white;
   border-radius: 0.375rem;
-  outline: 2px solid #004aad;
+  outline: 1px solid #004aad;
+  box-shadow: 0px 0px 5px #004aad;
+  transition: 300ms ease;
 }
 
 /* Radio and Checkbox */
+/* Radio */
 .form-radio {
   display: inline;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
   margin: 1rem;
   cursor: pointer;
   font-size: 22px;
@@ -729,7 +725,7 @@ button {
 }
 
 .form-radio input:checked ~ .radio-checked {
-  background-color: #004aad;
+  background-color: #2e71cb;
 }
 
 .radio-checked:after {
@@ -750,6 +746,97 @@ button {
   height: 9px;
   border-radius: 50%;
   background: white;
+}
+
+/* Checkbox */
+.form-checkbox {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.form-checkbox:hover input ~ .checkbox-mark {
+  background-color: #44474a;
+  transition: 0.3s all ease;
+}
+
+.form-checkbox input:checked ~ .checkbox-mark {
+  background-color: #2e71cb;
+}
+
+.checkbox-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-checkbox input:checked ~ .checkbox-mark:after {
+  display: block;
+}
+
+.form-checkbox .checkbox-mark:after {
+  left: 9px;
+  top: 2px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.5s all ease-out;
+}
+
+/* Card Component */
+.card-container {
+  width: 20rem;
+  background-color: white;
+  border-radius: 0.375rem;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  border-radius: 0.375rem;
+  background-color: #2e71cb;
+  color: #f6f6f4;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.card-button:hover {
+  background-color: #004aad;
+  color: #f6f6f4;
 }
 
 /* ---------------------------------------------------
