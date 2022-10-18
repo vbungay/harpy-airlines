@@ -230,6 +230,17 @@ ul.CTAs a {
   color: #44474a;
 }
 
+.homepage-title {
+  font-family: "Turnip" !important;
+  font-size: 5.5rem !important;
+  color: #004aad;
+}
+
+.homepage-title span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 .h3 {
   font-size: 1.2rem;
 }
