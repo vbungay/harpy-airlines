@@ -79,6 +79,10 @@ pre {
   margin-bottom: 0;
 }
 
+code {
+  border-radius: 0.5rem;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -234,13 +238,25 @@ ul.CTAs a {
   font-size: 1rem;
 }
 
+.btnCopy {
+  border: none;
+  border-radius: 0.5rem;
+}
+
 .btnCopy button {
   display: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.7rem;
+  border: none;
 }
 
 .btnCopy:hover button {
   display: block;
   cursor: pointer;
+}
+
+.btnCopy:hover button:hover {
+  box-shadow: 0 0 5px #060a0e;
 }
 
 .card {
@@ -457,6 +473,7 @@ ul.CTAs a {
   color: #060a0e;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
+  border-radius: 0.5rem;
 }
 
 .feedback-info {
@@ -464,6 +481,7 @@ ul.CTAs a {
   color: #060a0e;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
+  border-radius: 0.5rem;
 }
 
 .feedback-danger {
@@ -471,6 +489,7 @@ ul.CTAs a {
   color: #060a0e;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
+  border-radius: 0.5rem;
 }
 
 .feedback-warning {
@@ -478,6 +497,7 @@ ul.CTAs a {
   color: #060a0e;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
+  border-radius: 0.5rem;
 }
 
 .badge {
@@ -518,6 +538,7 @@ ul.CTAs a {
   background: #fff;
   padding-top: 1.2rem;
   color: #44474a;
+  border-radius: 0.5rem;
 }
 
 .icon-footer {
@@ -527,10 +548,10 @@ ul.CTAs a {
 /* Button design */
 .button {
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: #2e71cb;
   border: none;
-  color: #ffffff;
+  color: #f6f6f4;
   vertical-align: middle;
   text-align: center;
   font-size: 28px;
@@ -608,7 +629,7 @@ ul.CTAs a {
 
 .disabledButton {
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: #ffffff;
   border: 1px solid #c1c2c3;
   color: #c1c2c3;
@@ -623,7 +644,7 @@ ul.CTAs a {
 
 .loadingButton {
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: #ffffff;
   background-image: url("images/loading.gif");
   background-repeat: no-repeat;
@@ -638,23 +659,27 @@ ul.CTAs a {
   margin: 5px;
 }
 
-/* Modal Buttons */
+/* Modal */
+.modal-content {
+  border-radius: 0.5rem;
+}
+
 .modalButton {
   background-color: #2e71cb;
   color: #f6f6f4;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.4s;
 }
 
 .modalButton-warning {
   background-color: #f87575;
-  color: #f6f6f4;
+  color: white;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -666,7 +691,7 @@ ul.CTAs a {
 
 .modalButton-warning:hover {
   background-color: #ec6f6f;
-  color: #f6f6f4;
+  color: white;
   transition: 0.5s;
 }
 
@@ -688,7 +713,6 @@ ul.CTAs a {
 
 .textInput:focus {
   background-color: white;
-  border-radius: 0.375rem;
   outline: 1px solid #004aad;
   box-shadow: 0px 0px 5px #004aad;
   transition: 300ms ease;
@@ -783,6 +807,7 @@ ul.CTAs a {
   height: 25px;
   width: 25px;
   background-color: #eee;
+  border-radius: 0.3rem;
 }
 
 .form-checkbox:hover input ~ .checkbox-mark {
@@ -835,7 +860,7 @@ ul.CTAs a {
 }
 
 .card-button {
-  border-radius: 0.375rem;
+  border-radius: 0.3rem;
   background-color: #2e71cb;
   color: #f6f6f4;
   border: none;
