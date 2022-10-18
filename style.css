@@ -255,10 +255,6 @@ ul.CTAs a {
   cursor: pointer;
 }
 
-.btnCopy:hover button:hover {
-  box-shadow: 0 0 5px #060a0e;
-}
-
 .card {
   background: #004aad;
   padding: 2.5rem;
