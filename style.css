@@ -105,7 +105,9 @@ code {
   z-index: 999;
   background: #fdffff;
   color: #060a0e;
-  font-family: "Turnip Light";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
   font-size: 1.2rem;
   transition: all 0.3s;
   box-shadow: 0 1rem 1rem rgba(68, 71, 74, 0.24);
