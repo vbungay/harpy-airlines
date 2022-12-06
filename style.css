@@ -444,6 +444,26 @@ ul.CTAs a {
   font-weight: 500;
 }
 
+.heading-header6 {
+  font-size: 14px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.meta-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.side-by-side {
+  float:left;
+  width:100%
+}
+
+.font-family-brand {
+  color: #D2691E;
+}
+
 .para {
   color: #060a0e;
 }
